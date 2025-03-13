@@ -10,7 +10,6 @@ import MainLayout from "./components/layout/MainLayout";
 import CapTableManagerNew from "./components/captable/CapTableManagerNew";
 import RuleManagementDashboard from "./components/rules/RuleManagementDashboard"; // Import rule management component
 
-
 import routes from "tempo-routes";
 
 function App() {
@@ -101,7 +100,10 @@ function App() {
             />
 
             {/* Other routes */}
-            <Route path="/rule-management" element={<RuleManagementDashboard />} />
+            <Route
+              path="/rule-management"
+              element={<RuleManagementDashboard />}
+            />
             <Route path="/investors" element={<InvestorsList />} />
             <Route path="/reports" element={<ReportsDashboard />} />
             <Route
